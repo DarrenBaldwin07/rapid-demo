@@ -18,43 +18,43 @@ export interface Handlers {
   			path: string
   			output: any
   			type: 'get'
-  			isDynamic: true
+  			isDynamic: false
 		},
 
 		_param__index: {
   			path: string
   			output: any
   			type: 'get'
-  			isDynamic: true
+  			isDynamic: false
 		},
 
 		_param__todo: {
   			path: string
   			output: any
   			type: 'get'
-  			isDynamic: true
+  			isDynamic: false
 		},
 
 		_param___id_: {
   			path: [string, string]
   			output: any
   			type: 'get'
-  			isDynamic: true
+  			isDynamic: false
 		},
 
 		_param__nest_dir: {
   			output: any
   			type: 'get'
-  			isDynamic: true
+  			isDynamic: false
 		},
 
 		"route": {
   			output: any
   			type: 'get'
-  			isDynamic: true
+  			isDynamic: false
 		},
 
-		todo: {
+		"todo": {
   			output: any
   			type: 'query'
   			isDynamic: false
@@ -107,14 +107,14 @@ export const routes = {
 		url: '/_param_/nest/',
 		type: 'get',
 	},
-	todo: {
+	"todo": {
 		url: '/todo',
 		type: 'query',
 	},
 } as const
 
-export type Testy = number;
+export type TestAlias2 = number;
 
 export type RapidOutput = string;
 
-export type Testy7 = number;
+export type Testy = number;

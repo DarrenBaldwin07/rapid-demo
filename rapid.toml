@@ -7,4 +7,5 @@ typescript_generation = true
 port = 8080
 routes_directory = "src/routes"
 bindings_export_path = "/"
-typescript_generation_dir = "src"
+typescript_generation_directory = "src"
+

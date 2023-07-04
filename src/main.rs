@@ -1,5 +1,5 @@
 use clerk_rs::{validators::actix::ClerkMiddleware, ClerkConfiguration};
-use rapid_web::actix::{dev, web, App, HttpRequest, HttpResponse, HttpServer, Result};
+use rapid_web::actix::{App, HttpRequest, HttpResponse, HttpServer, Result};
 use rapid_web::cors::Cors;
 use rapid_web::rapid_web_codegen::{main, rapid_configure, routes};
 use rapid_web::server::RapidServer;
@@ -8,6 +8,8 @@ use std::env::current_dir;
 use walkdir::WalkDir;
 
 rapid_configure!("src/routes");
+
+pub type TestAlias2 = i32;
 
 #[main]
 async fn main() -> std::io::Result<()> {
