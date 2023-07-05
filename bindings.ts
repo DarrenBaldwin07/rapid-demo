@@ -2,12 +2,6 @@
 
 export interface Handlers {
 	queries: {
-		test_index: {
-  			output: any
-  			type: 'get'
-  			isDynamic: false
-		},
-
 		"test2": {
   			output: any
   			type: 'get'
@@ -61,6 +55,12 @@ export interface Handlers {
 		},
 	},
 	mutations: {
+		"helloWorld": {
+  			output: String
+  			type: 'mutation'
+  			isDynamic: false
+		}
+
 		index: {
   			input: number
   			output: any
@@ -71,9 +71,9 @@ export interface Handlers {
 }
 
 export const routes = {
-	test_index: {
+	"helloWorld": {
 		url: '/test/',
-		type: 'get',
+		type: 'mutation',
 	},
 	"test2": {
 		url: '/test/test2/',
@@ -118,3 +118,5 @@ export type TestAlias2 = number;
 export type RapidOutput = string;
 
 export type Testy = number;
+
+export type Output = string;
