@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 
 
 pub type RapidOutput = String;
-type Testy = i32;
+pub const ROUTE_KEY : &str = "lolRoute";
 
 #[rapid_handler]
 pub async fn mutation(body: RapidJson<i32>) -> HttpResponse {

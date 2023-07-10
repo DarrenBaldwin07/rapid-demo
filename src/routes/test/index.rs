@@ -3,7 +3,7 @@ use rapid_web::rapid_web_codegen::rapid_handler;
 use rapid_web::request::RapidJson;
 
 pub const ROUTE_KEY: &str = "helloWorld";
-pub type Output = String;
+pub type RapidOutput = String;
 
 #[rapid_handler]
 pub async fn mutation() -> HttpResponse {

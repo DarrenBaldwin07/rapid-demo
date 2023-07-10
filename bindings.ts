@@ -3,7 +3,7 @@
 export interface Handlers {
 	queries: {
 		"test2": {
-  			output: any
+  			output: number
   			type: 'get'
   			isDynamic: false
 		},
@@ -56,14 +56,14 @@ export interface Handlers {
 	},
 	mutations: {
 		"helloWorld": {
-  			output: String
+  			output: string
   			type: 'mutation'
   			isDynamic: false
 		}
 
-		index: {
+		"lolRoute": {
   			input: number
-  			output: any
+  			output: string
   			type: 'mutation'
   			isDynamic: false
 		}
@@ -83,7 +83,7 @@ export const routes = {
 		url: '/test/test2/_id_',
 		type: 'get',
 	},
-	index: {
+	"lolRoute": {
 		url: '/',
 		type: 'mutation',
 	},
@@ -114,9 +114,3 @@ export const routes = {
 } as const
 
 export type TestAlias2 = number;
-
-export type RapidOutput = string;
-
-export type Testy = number;
-
-export type Output = string;
