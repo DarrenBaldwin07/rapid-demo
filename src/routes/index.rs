@@ -2,9 +2,9 @@ use rapid_web::actix::{web, HttpResponse};
 use rapid_web::rapid_web_codegen::rapid_handler;
 use rapid_web::request::RapidJson;
 use serde::{Deserialize, Serialize};
+use rapid_web::types::Union;
 
-
-pub type RapidOutput = String;
+pub type RapidOutput = Union<String, i32>;
 pub const ROUTE_KEY : &str = "lolRoute";
 
 #[rapid_handler]

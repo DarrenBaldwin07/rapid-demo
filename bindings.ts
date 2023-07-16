@@ -63,7 +63,7 @@ export interface Handlers {
 
 		"lolRoute": {
   			input: number
-  			output: string
+  			output: string | number
   			type: 'mutation'
   			isDynamic: false
 		}
